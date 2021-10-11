@@ -1,0 +1,17 @@
+@import '../base/colors';
+@import '../base/fonts';
+
+
+%buttons{
+    background-color: $btn-color;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+%titles{
+    color: $title-color;
+    font-family: $font-title;
+    font-size: 45px;
+    margin-bottom: 5px;
+}

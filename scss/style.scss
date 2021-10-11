@@ -1,0 +1,625 @@
+@import 'base/colors';
+@import 'base/fonts';
+@import 'extension/extend';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Inter', sans-serif !important;
+  background-color:  #FAFAFA !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  margin-top: 20px;
+  scroll-margin-top: 6em;
+}
+.titulo-contacto, .title-trabaja, .title-somos, .title-empresas{
+  @extend %titles;
+}
+.titulo-productos{
+  @extend %titles;
+  margin-top: 120px;
+}
+
+#div5Desinfeccion.hide{
+  display: none !important
+}
+
+.title-empresas{
+  margin-top: 120px !important;
+}
+
+.texto-contacto, .subtl-productos{
+    color: $sutbl-color;
+    font-size: 18px;
+    font-family: $font-text;
+}
+
+.fa-check-circle{
+    color: $btn-color;
+    font-size: 30px !important;
+}
+a, ul, li {
+  margin-bottom: 0px !important; 
+}  
+.container-fluid {
+  width: 100%;
+  padding: 0; 
+}
+// ***** SLIDER ***** //
+
+.slide{
+  margin-top: 70px !important;
+}
+
+.subtl-trabaja{
+  color: $title-color;
+  font-size: 20px;
+  font-family: $font-text;
+  font-weight: 300;
+  margin: 0 10rem;
+}
+
+.title-vendedor{
+  font-family: $font-text;
+  color: $title-color;
+  font-weight: bolder;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.text-vendedor{
+  font-family: $font-text;
+  color: $sutbl-color;
+  font-size: 20px;
+}
+
+// ***** PRODUCTOS ***** //
+
+.card{
+  border-radius: 10px !important;
+  padding: 20px;
+}
+
+.card-text{
+  color: $title-color;
+  font-family: $font-title;
+  font-size: 18px;
+  margin-bottom: 6px !important;
+}
+
+.card-link{
+  color: $btn-color;
+  text-decoration: none;
+  font-family: $font-text;
+  font-size: 14px;
+
+}
+
+.card-link:hover{
+  color: $btn-color !important;
+}
+.mt-5{
+width: 100%;
+}
+.btn-map{
+  width: 230px;
+  height: 45px;
+  margin-top: 20px;
+  @extend %buttons
+}
+
+.btn-submit{
+  width: 230px;
+  height: 45px;
+  margin-top: 20px;
+  background-color: #03EB8F;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+.btn-primary{
+  background-color: #03EB8F !important;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-color: #03EB8F !important;
+}
+
+// ***** SOMOS BIODEGRADABLES ***** //
+
+.section-somos{
+  background-color: $bg-color-secondary;
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+
+.title-somos{
+  margin-top: 0;
+}
+
+.text-somos1, .text-somos2{
+  font-family: $font-text;
+  font-size: 16px;
+}
+
+.text-somos1{
+  color: $sutbl-color;
+  margin-top: 1.6rem;
+}
+.text-somos2{
+  color: $title-color;
+}
+
+.fondo-img{
+  background-image: url("../bidones.png") !important;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+// ***** CONTACTO ***** //
+
+.titulo-contacto{
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.contactanos{
+  background-image: url('../fondo-contacto.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+}
+.contactanosPages {
+ 
+  background-color: #F1F1F1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-group{
+  margin-top: 15px !important;
+}
+.formulario-contacto{
+  background-color: #F1F1F1;
+  // padding: 40px 60px !important;
+  border-radius: 15px;
+}
+
+.btn-submit{
+  margin-top: 15px !important;
+  width: 90px;
+  height: 35px;
+  @extend %buttons
+}
+
+.btn-ver{
+  @extend %buttons;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+} 
+
+
+//***** FOOTER *****//
+
+.footer{
+  background-color: $title-color;
+}
+.div-footer{
+  color: white;
+  font-size: 15px;
+}
+
+.icon{
+  font-size: 18px;
+}
+
+// WHATSAPP ICON
+
+.container-whapp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 30px;
+  z-index: 5;
+
+  a{
+      text-decoration: none;
+      color: white;
+  }
+  .fab{
+    font-size: 30px;
+  }
+}  
+
+// MODAL
+
+.div-close{
+  padding: 20px 20px 0px 0px  !important
+}
+
+.modal-content{
+  flex-direction: row !important;
+}
+.modal-descripcion{
+  font-size: 15px;
+  color: $sutbl-color;
+  font-family: $font-text;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 0px !important;
+}
+.imgModal{
+  padding: 15px;
+  object-fit: contain;
+}
+.title-modal{
+  color: $title-color;
+  font-family: $font-title;
+  font-size: 28px;
+  text-align: left !important;
+}
+.text-modal-2{
+  color: $sutbl-color;
+  font-family: $font-title;
+  font-size: 17px;
+  text-align: left !important;
+  margin-top: 10px;
+  font-weight: 200;
+}
+.btn-modal{
+  margin-right: 100px !important;
+}
+.text-modal-button{
+  color: $title-color;
+  font-family: $font-title;
+  font-size: 15px;
+  text-align: center !important;
+}
+.labelCantidad{
+  padding: 0px;
+  border-left: 0;
+  border-right: 0;
+  color: $sutbl-color;
+}
+.button-decremento{
+  height: 30px;
+  width: 35px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  margin-left: 6px;
+  font-family: none;
+  font-size: 20px;
+  color: $title-color;
+  font-weight: bold;
+}
+.button-incremento{
+  height: 30px;
+  width: 35px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-family: none;
+  font-size: 20px;
+  color: $title-color;
+  font-weight: bold;
+}
+.borderModal{
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 20px;
+}
+.modal-content2{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: .3rem;
+  outline: 0;
+  padding: 5px;
+}
+.modal-content3{
+  position: relative;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: row;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: .3rem;
+  outline: 0;
+  padding: 5px;
+}
+.modal-content4{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: .3rem;
+  outline: 0;
+}
+.form-control{
+  font-family: $font-text;
+}
+#productosSeleccionados, #productosSeleccionadosDesinfeccion, #productosSeleccionadosPerfu, #productosSeleccionadosPileta, #productosSeleccionadosCombos{
+  color: $sutbl-color;
+  font-family: $font-title;
+  font-size: 17px;
+}
+  // ***** NAVBAR ***** //
+nav{
+  background-color: #F1F1F1 !important;
+}
+  /* Top Nav */
+#navTablet {
+  display: none; 
+} 
+#navMobile {
+  display: none; 
+}
+#navDesktop {
+  position: fixed;
+  z-index: 5;
+  transition: 0.2s;
+  box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding-left: 0px !important;
+  border-bottom: 0.5px black;
+  top:0; 
+}
+.col-xl-12{
+  padding-left: 0px !important;
+}
+.navDesktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}  
+.navDesktop__izq li,.navDesktop__der li,.navDesktop__logo li {
+  display: inline-block; 
+}
+.navDesktop__izq li a,.navDesktop__der li a,.navDesktop__logo li a {
+  text-decoration: none;
+  color: $title-color;
+  font-family: $font-title;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1rem;
+  padding: 10px 5px;
+  margin: 0 20px;
+  margin-top: 10px !important;
+  text-align: center;
+  transition: 0.2s;
+}
+.navDesktop__izq li a:hover, .navDesktop__der li a:hover, .navDesktop__logo li a:hover {
+  color: $btn-color;
+}  
+/* Top Logo */
+.navDesktop__logo a {
+  margin: 0 50px; 
+}
+#logo-megatrade {
+  border: none;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: 0.4s; 
+}
+#logo-megatrade:hover {
+  filter: brightness(300%);
+  transition: 0.2s;
+  transform: scale(108%); 
+}
+.rrss{
+  text-decoration: none;
+  font-size: 20px;
+  color: $btn-color;
+}  
+
+@media (max-width: 1200px) {
+  #navDesktop{
+    display: none; 
+  }
+  #navMobile{
+    display: none; 
+  }
+  #navTablet{
+    background-color: #f5f3f4;
+    box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 9;
+    transition: 0.2s; 
+  }
+  .navTablet__logo {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px; 
+  }
+  .navTablet__Menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    li {
+      display: inline-block;
+      padding-bottom: 10px;
+      margin: 0 12px; 
+      a {
+        text-decoration: none;
+        color: $title-color;
+        font-family: $font-title;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        transition: 0.2s; }
+        a:hover {
+          color: $btn-color; 
+        }
+      }
+    }
+  }
+@media (max-width: 1024px) { 
+  .slide{
+    margin-top: 130px !important;
+  }
+} 
+@media (max-width: 768px) {
+/* Mobile Menu */
+  #navDesktop {
+    display: none; 
+  }
+  #navTablet {
+    display: none; 
+  }
+  #navMobile {
+    display: block;
+    z-index: 302;
+    width: 100%;
+    position: fixed;
+    height: 80px; 
+  }
+  .navbarSupportedContent20 {
+    height: 1000px; 
+  }
+  .mb-4, .my-4 {
+    padding: 0;
+    margin: 0 !important; 
+  }
+  .navbar {
+    padding: 25px;
+    margin: 0;
+    background-color: #f5f3f4;
+    box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.3); 
+  }
+  .navbar-nav{
+    text-align: center;
+  }
+  nav{
+    height: 75px;
+  }
+  .slide{
+      margin-top: 0px !important;
+  }
+  #logo-megatrade {
+    height: 60px;
+    margin-top: -20px;
+  }
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+    height: 35px; 
+  }
+  .navbar-light .navbar-toggler {
+    color: $btn-color !important;
+    border-color: transparent; 
+  }
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    height: 35px; 
+  }
+  .mr-auto, .mx-auto {
+    margin-top: 21px; 
+  }
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
+    font-size: 17px;
+    font-weight: bold;
+    color: $title-color !important; 
+    background-color: #F1F1F1;
+  }
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: $btn-color;
+    background-color: $btn-color; 
+  } 
+  .navbar-collapse{
+    margin-top: 20px;
+  }
+  .title-trabaja, .title-somos, .titulo-productos {
+    font-size: 35px; 
+    margin-top: 20px;
+  }
+  .title-empresas{
+  margin-top: 50px !important;
+}
+
+  .titulo-contacto {
+    font-size: 25px !important; 
+  }
+  .subtl-trabaja {
+    margin: 10px !important; 
+  }
+  .mt-5 {
+    margin-left: 3px !important;
+    margin-right: 3px !important; 
+  }
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 15px; 
+  }
+  /* Nav Mobile */
+  #navMobile__menuContenedor {
+    top: 37px;   
+    input {
+      top: -10px;
+      left: 17px; 
+    }
+    span {
+      width: 22px;
+      height: 3px;
+      margin-bottom: 3px;
+      transform-origin: 2px 0px; 
+    }
+  } 
+  #menu {
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    top: 48px; 
+  }
+}
+ /* Carousel */
+@media (min-width: 280px) and (max-width: 767px) {
+  #carousel-desktop{
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1400px) {
+  #carousel-mobile{
+    display: none;
+  }
+}
