@@ -591,6 +591,14 @@ nav{
   p {
     font-size: 15px; 
   }
+  .fondo-img{
+    background-image: url("../img/middle-mobile.png") !important;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
   /* Nav Mobile */
   #navMobile__menuContenedor {
     top: 37px;   
