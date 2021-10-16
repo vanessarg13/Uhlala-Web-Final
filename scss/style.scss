@@ -133,7 +133,7 @@ width: 100%;
   border-color: #03EB8F !important;
 }
 
-// ***** SOMOS BIODEGRADABLES ***** //
+// ***** SOMOS BIODAGRADABLES ***** //
 
 .section-somos{
   background-color: $bg-color-secondary;
@@ -159,7 +159,7 @@ width: 100%;
 }
 
 .fondo-img{
-  background-image: url("../bidones.png") !important;
+  background-image: url("../img/middle-desktop.png") !important;
   width: 100%;
   height: 200px;
   background-size: cover;
@@ -593,11 +593,6 @@ nav{
   }
   .fondo-img{
     background-image: url("../img/middle-mobile.png") !important;
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    margin-top: 0;
-    margin-bottom: 80px;
   }
   /* Nav Mobile */
   #navMobile__menuContenedor {
