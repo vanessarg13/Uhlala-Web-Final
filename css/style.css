@@ -27,7 +27,7 @@ section {
   scroll-margin-top: 6em; }
 
 .titulo-productos {
-  margin-top: 50px; }
+  margin-top: 80px; }
 
 #div5Desinfeccion.hide {
   display: none !important; }
@@ -159,6 +159,9 @@ a, ul, li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.texto-contactoPages {
+  text-align: left !important; }
 
 .form-group {
   margin-top: 15px !important; }
